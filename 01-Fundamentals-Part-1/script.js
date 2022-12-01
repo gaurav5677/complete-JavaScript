@@ -121,3 +121,14 @@ Test Data 2 : Vishal weight 95 kg and is 1.88m tall. Onkar wights 85kg and is 1.
 
 
 */
+
+const massVishal = 78;
+const heightVishal = 1.69;
+const massOnkar = 78;
+const heightOnkar = 1.95;
+
+const BMIVishal = massVishal / heightVishal ** 2;
+const BMIOnkar = massOnkar / heightOnkar ** 2;
+const VishalBMIHIgher = BMIOnkar > BMIVishal;
+
+console.log(BMIOnkar, BMIVishal, VishalBMIHIgher);
