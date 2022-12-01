@@ -56,7 +56,7 @@ console.log(job)*/
 
 //Math operators
 
-const now = 2037;
+/*const now = 2037;
 const ageGaurvar = now - 1991;
 const ageabhi = now - 2018;
 console.log(ageGaurvar, ageabhi);
@@ -87,3 +87,19 @@ console.log(ageGaurvar >= 18);
 const isFullage = ageabhi >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+/*
+const now = 2037;
+const ageGaurvar = now - 1991;
+const ageabhi = now - 2018;
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+
+x = y = 15 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageGaurvar + ageabhi) / 2;
+console.log(ageGaurvar, ageabhi, averageAge);
+*/
