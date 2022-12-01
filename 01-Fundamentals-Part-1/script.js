@@ -103,3 +103,21 @@ console.log(x, y);
 const averageAge = (ageGaurvar + ageabhi) / 2;
 console.log(ageGaurvar, ageabhi, averageAge);
 */
+
+///////////////////////////////////////////////////////
+// coding challenge #1
+
+/* Vishal and Onkar are trying to compare their  BMI (Body Mass Index), which is calculated using the formula : BMI = mass / height ** 2 = mass / ( height * height ).
+(mass in kg and height in meter) 
+
+1. Store Vishal's and Onkar's mass and height in variables 
+2. Calculate both their BMI's using the formula ( you can even implement both versions)
+3. Create a boolean variable 'VishalHigherBMI' containing information about whether vishal has a higher BMI than Onkar.
+
+TEST DATA 1 :   Vishal weights 78 kg and is 1.69 m tall . Onkar weights 92 kg and  is 1.95 m tall. 
+Test Data 2 : Vishal weight 95 kg and is 1.88m tall. Onkar wights 85kg and is 1.76 m tall .
+
+ 
+
+
+*/
