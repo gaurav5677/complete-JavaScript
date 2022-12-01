@@ -122,6 +122,7 @@ Test Data 2 : Vishal weight 95 kg and is 1.88m tall. Onkar wights 85kg and is 1.
 
 */
 
+/*
 const massVishal = 78;
 const heightVishal = 1.69;
 const massOnkar = 78;
@@ -131,4 +132,24 @@ const BMIVishal = massVishal / heightVishal ** 2;
 const BMIOnkar = massOnkar / heightOnkar ** 2;
 const VishalBMIHIgher = BMIOnkar > BMIVishal;
 
-console.log(BMIOnkar, BMIVishal, VishalBMIHIgher);
+console.log(BMIOnkar, BMIVishal, VishalBMIHIgher);*/
+
+//String and template Literals
+const firstName = "gaurav";
+const job = "programmer";
+const birthday = 2001;
+const year = 2022;
+
+const gaurav =
+  "I'm " + firstName + ", a " + (year - birthday) + " years old " + job + "!";
+
+console.log(gaurav);
+
+const gauravNew = `I'm ${firstName} , a ${year - birthday} years old ${job} !`;
+console.log(gauravNew);
+
+console.log(` just a regular string `);
+
+console.log(`string 
+             multiple 
+            lines `);
