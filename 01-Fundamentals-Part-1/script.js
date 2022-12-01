@@ -134,6 +134,7 @@ const VishalBMIHIgher = BMIOnkar > BMIVishal;
 
 console.log(BMIOnkar, BMIVishal, VishalBMIHIgher);*/
 
+/*
 //String and template Literals
 const firstName = "gaurav";
 const job = "programmer";
@@ -153,3 +154,16 @@ console.log(` just a regular string `);
 console.log(`string 
              multiple 
             lines `);
+*/
+
+const age = 15;
+// const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log("Sarah can  start driving License  ");
+} else {
+  const yearLeft = 18 - age;
+  console.log(
+    `sarah can not start driving License wait another ${yearLeft} years :)`
+  );
+}
