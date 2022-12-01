@@ -19,7 +19,7 @@ console.log(mycurrentjob)
 console.log(myFirstjob)
 */
 
-let javascriptIsFun=true; // value hold the datatype not variable 
+/*let javascriptIsFun=true; /// value hold the datatype not variable 
 console.log(javascriptIsFun)
 
 // console.log(typeof true);
@@ -38,4 +38,19 @@ console.log(typeof year);
 year = 1992;
 console.log(typeof year)
 
-console.log(typeof null);  
+console.log(typeof null);  */
+
+
+let age = 30;
+age = 32 ;
+
+const  birthyear= 1991;
+// birthyear=1990;
+
+// const job;
+
+var job = 'programmer';
+job = 'techer';
+
+
+console.log(job)
