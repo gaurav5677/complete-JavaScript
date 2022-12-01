@@ -156,7 +156,7 @@ console.log(`string
             lines `);
 */
 
-/*
+/* 
 const age = 15;
 
 // const isOldEnough = age >= 18;
@@ -170,3 +170,9 @@ if (age >= 18) {
   );
 }
 */
+
+// Type conversion
+
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
