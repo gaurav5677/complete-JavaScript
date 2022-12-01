@@ -156,7 +156,9 @@ console.log(`string
             lines `);
 */
 
+/*
 const age = 15;
+
 // const isOldEnough = age >= 18;
 
 if (age >= 18) {
@@ -167,3 +169,4 @@ if (age >= 18) {
     `sarah can not start driving License wait another ${yearLeft} years :)`
   );
 }
+*/
