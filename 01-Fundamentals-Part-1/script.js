@@ -171,6 +171,8 @@ if (age >= 18) {
 }
 */
 
+/*
+
 // Type conversion
 
 const inputYear = "1991"; /// this still hold as string
@@ -194,3 +196,6 @@ console.log(m);
 
 let x = "10" - "4" - "3" - 2 + "5 ";
 console.log(x);
+*/
+
+/// 5 falsy values : 0 , '' , undefined , null , NaN , falses
