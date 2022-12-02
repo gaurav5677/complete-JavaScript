@@ -312,3 +312,14 @@ switch (day) {
     console.log(`not a valid day!`);
 }
 */
+
+////////////////////////The condition (Ternary)
+const age = 26;
+age >= 18
+  ? console.log(` I like to drink wine 🍷`)
+  : console.log(`I like to have watermelon 🍉`);
+
+const drink = age >= 18 ? "wine 🍷" : "watermelon 🍉";
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
