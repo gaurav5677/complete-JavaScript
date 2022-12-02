@@ -173,6 +173,24 @@ if (age >= 18) {
 
 // Type conversion
 
-const inputYear = "1991";
-console.log(Number(inputYear), inputYear);
-console.log(inputYear + 18);
+const inputYear = "1991"; /// this still hold as string
+console.log(Number(inputYear), inputYear); // using this number function will give us a number.
+console.log(Number(inputYear) + 18);
+
+// type coercion
+
+console.log("I am " + 23 + " year old ");
+console.log("I am " + "23" + " year old ");
+console.log("23" + "10");
+console.log("23" * "2"); // here 23 is string
+console.log("23" - "10" + 3);
+
+let n = "1" + 1; // this will be 11
+n = n - 1; // this will converted to number so string  11 will convert to number 11 and the -1 so 10 2ill be  the output
+console.log(n);
+
+let m = 2 + 3 + 4 + "5";
+console.log(m);
+
+let x = "10" - "4" - "3" - 2 + "5 ";
+console.log(x);
