@@ -222,6 +222,7 @@ if (height) {
 }
 */
 
+/*
 ////////////////////////Equality operators/////////////////////
 
 const age = 19; // assignment operator
@@ -255,3 +256,32 @@ if (Nav == 7) {
 }
 
 if (Nav !== 23) console.log(`why not 23`);
+*/
+/*
+/////////////////////Logical Operators /////////////////////
+
+const hasDriverLicense = true; // A
+const hadGoodVision = true;
+
+console.log(hasDriverLicense && hadGoodVision);
+console.log(hasDriverLicense || hadGoodVision);
+console.log(!hasDriverLicense);
+
+const shouldDrive = hasDriverLicense && hadGoodVision;
+
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive ");
+// } else {
+//   console.log(`Some one else should drive`);
+// }
+const isTired = true;
+console.log(hasDriverLicense && hadGoodVision && isTired);
+
+if (shouldDrive && !isTired) {
+  console.log("Sarah is able to drive ");
+} else {
+  console.log(`Some one else should drive`);
+}
+
+
+*/
