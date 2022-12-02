@@ -200,6 +200,7 @@ console.log(x);
 
 /// 5 falsy values : 0 , '' , undefined , null ,    NaN , falses
 
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean("Jonas"));
@@ -219,3 +220,38 @@ if (height) {
 } else {
   console.log(`Height is undefiend `);
 }
+*/
+
+////////////////////////Equality operators/////////////////////
+
+const age = 19; // assignment operator
+
+// strict equality operator
+if (age === "19") console.log(`you just became an adult `);
+
+// loose equality operator
+if (age == 19) console.log(`you just became adult :)`);
+
+// we cat  get any value from web page using prompt function
+
+const Fav = Number(prompt("What's your favourite Number?"));
+console.log(Fav);
+console.log(typeof Fav);
+
+if (Fav === 23) {
+  console.log(`Cool ! 23 is amazing number!`);
+} else if (Fav === 7) {
+  console.log(` 7 is cool number `);
+} else {
+  console.log(`Number is not 23 or 7 `);
+}
+
+const Nav = prompt("What's your favourite Number?");
+console.log(Nav);
+console.log(typeof Nav);
+
+if (Nav == 7) {
+  console.log(`Cool ! 7 is amazing number!`);
+}
+
+if (Nav !== 23) console.log(`why not 23`);
