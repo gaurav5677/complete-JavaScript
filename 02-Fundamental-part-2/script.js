@@ -168,6 +168,9 @@ console.log(
   ` ${Gaurav.firstName} has ${Gaurav.friends.length} , and his best friend is called ${jonas.friends[0]}`
 );
 */
+/*
+
+//////////////////////////////////////////////////        Object methods         //////////////////////////////////////////
 
 const Gaurav = {
   firstName: "Gaurav",
@@ -203,3 +206,12 @@ console.log(Gaurav.calAge());
 // console.log(Gaurav.age);
 
 console.log(Gaurav.getSummary());
+*/
+
+//////////////////////////////////////////////////        _Iteration_for_Loop_          //////////////////////////////////////////
+
+// console.log(`lifting weights repetition 1`);
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`lifting weights repetition  ${rep}  😤 `);
+}
