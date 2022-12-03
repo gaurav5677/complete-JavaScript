@@ -124,6 +124,7 @@ console.log(frineds.indexOf("Steven"));
 
 */
 
+/*
 //////////////////////////objects /////////////////
 
 const Gaurav = {
@@ -166,3 +167,39 @@ console.log(Gaurav);
 console.log(
   ` ${Gaurav.firstName} has ${Gaurav.friends.length} , and his best friend is called ${jonas.friends[0]}`
 );
+*/
+
+const Gaurav = {
+  firstName: "Gaurav",
+  lastName: "Patil",
+  birthYear: 2001,
+  job: "teacher",
+  friends: ["ahbhi", "pranav", "onkar", "harshal"],
+  hasDrivingLicense: false,
+
+  // calAge: function (birthYear) {
+  //   return 2022 - birthYear;
+  // }
+
+  // calAge: function () {
+  //   console.log(this);
+  //   return 2022 - this.birthYear;
+  // },
+
+  calAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calAge()} -year old ${
+      Gaurav.job
+    } , and he has ${this.hasDrivingLicense ? "a" : "no"} driver's license.   `;
+  },
+};
+
+console.log(Gaurav.calAge());
+
+// console.log(Gaurav.age);
+
+console.log(Gaurav.getSummary());
