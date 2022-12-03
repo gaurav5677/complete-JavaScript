@@ -126,12 +126,43 @@ console.log(frineds.indexOf("Steven"));
 
 //////////////////////////objects /////////////////
 
-const jonas = {
+const Gaurav = {
   // this syntax is called as Object literal Syntax
-  firstName: " gaurav ",
+  firstName: "gaurav ",
   lastName: "patil",
   age: 2022 - 2001,
   job: "Teacher",
   friends: ["abhi", "onkar", "harshal"],
 }; //Curly braces are used to define new object
-// this is out object Jonas having 5 key values  , this is impossible in arrays but in object it is possible
+// this is out object Gaurav having 5 key values  , this is impossible in arrays but in object it is possible
+
+console.log(Gaurav);
+
+///////////////////// how to change and retrive  data from objects ////////////////////////
+
+console.log(Gaurav.lastName);
+
+console.log(Gaurav["lastName"]);
+
+const nameKey = "Name";
+console.log(Gaurav["first" + nameKey]);
+console.log(Gaurav["last" + nameKey]); // is is important to build a string without it ,  it can't work properly
+
+const interestedIn = prompt(
+  " What do you want to know about Gaurav?  Choose between firstName , lastName age, job and friends "
+);
+
+if (Gaurav[interestedIn]) {
+  console.log(Gaurav[interestedIn]); // here bracket notation gives us a  correct ans and it is perfect to use . instead of dot notation
+} else {
+  console.log(
+    `Wrong request! What do you want to know about Gaurav?  Choose between firstName , lastName age, job and friends `
+  );
+}
+Gaurav.location = "Indian";
+// Gaurav('twitter') = @adgadsf;
+console.log(Gaurav);
+
+console.log(
+  ` ${Gaurav.firstName} has ${Gaurav.friends.length} , and his best friend is called ${jonas.friends[0]}`
+);
