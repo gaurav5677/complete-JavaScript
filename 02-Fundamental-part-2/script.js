@@ -109,6 +109,7 @@ console.log(jonas.length);
 
 */
 
+/*
 /////////////////////////////ARRays methods ///////////////////////////
 
 const frineds = ["bob", "michael", "Steven", "peter", "gaurav"];
@@ -120,3 +121,17 @@ frineds.unshift("jay"); // alos return the length of the arrya
 console.log(frineds);
 
 console.log(frineds.indexOf("Steven"));
+
+*/
+
+//////////////////////////objects /////////////////
+
+const jonas = {
+  // this syntax is called as Object literal Syntax
+  firstName: " gaurav ",
+  lastName: "patil",
+  age: 2022 - 2001,
+  job: "Teacher",
+  friends: ["abhi", "onkar", "harshal"],
+}; //Curly braces are used to define new object
+// this is out object Jonas having 5 key values  , this is impossible in arrays but in object it is possible
