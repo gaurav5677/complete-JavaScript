@@ -90,3 +90,18 @@ console.log(frineds);
 
 const years = new Array(1991, 1973, 1239, 3020);
 console.log(years);
+
+console.log(frineds[0]);
+console.log(frineds[2]);
+console.log(years[0]);
+
+console.log(frineds.length);
+console.log(frineds[frineds.length - 1]);
+
+frineds[2] = "gaurav";
+console.log(frineds);
+
+const firstName = "jonas";
+const jonas = [firstName, "patil", 2023 - 2022, "teacher", years];
+console.log(jonas);
+console.log(jonas.length);
