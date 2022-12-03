@@ -83,6 +83,7 @@ console.log(YearsUntilRetirement(1990, "bobs"));
 
 // console.log(fruitProcessor(2, 3));
 
+/*
 ///////////////////////////////Arrays ///////////////////////
 
 const frineds = ["Michael", "Steven", "peter"];
@@ -105,3 +106,17 @@ const firstName = "jonas";
 const jonas = [firstName, "patil", 2023 - 2022, "teacher", years];
 console.log(jonas);
 console.log(jonas.length);
+
+*/
+
+/////////////////////////////ARRays methods ///////////////////////////
+
+const frineds = ["bob", "michael", "Steven", "peter", "gaurav"];
+frineds.push("jay");
+console.log(frineds);
+// console.log(newLength);
+
+frineds.unshift("jay"); // alos return the length of the arrya
+console.log(frineds);
+
+console.log(frineds.indexOf("Steven"));
