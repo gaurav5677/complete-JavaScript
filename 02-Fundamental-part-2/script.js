@@ -48,12 +48,6 @@ console.log(age1, age2);
 
 // ///////////////////ARRROW function ///////////////
 
-// function expresstion
-
-const calAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
-
 // Arrow function
 
 const calAge3 = (birthYear) => 2037 - birthYear;
@@ -61,3 +55,13 @@ const age3 = calAge3(1991);
 console.log(age3);
 
 /// here we don't need to right return keyword it's done explicity with in the single line of code
+
+const YearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirment = 65 - age;
+  // return retirment;
+  return ` ${firstName} retires in ${retirment} years`;
+};
+
+console.log(YearsUntilRetirement(1991, "jonas"));
+console.log(YearsUntilRetirement(1990, "bobs"));
