@@ -25,7 +25,7 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 */
-
+/*
 /////////// funtion declaration  Vs Exprestions////////////////////
 // function declaration
 function calculateAge1(birthYear) {
@@ -44,3 +44,20 @@ const calAge2 = function (birthYear) {
 const age2 = calAge2(1991);
 
 console.log(age1, age2);
+*/
+
+// ///////////////////ARRROW function ///////////////
+
+// function expresstion
+
+const calAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+// Arrow function
+
+const calAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(age3);
+
+/// here we don't need to right return keyword it's done explicity with in the single line of code
