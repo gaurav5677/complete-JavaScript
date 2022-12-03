@@ -45,7 +45,7 @@ const age2 = calAge2(1991);
 
 console.log(age1, age2);
 */
-
+/*
 // ///////////////////ARRROW function ///////////////
 
 // Arrow function
@@ -65,3 +65,20 @@ const YearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(YearsUntilRetirement(1991, "jonas"));
 console.log(YearsUntilRetirement(1990, "bobs"));
+
+*/
+
+////////////////////////////////Functions calling other function (recursion)////////////////////////
+function cutFruitpieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitpieces(apples);
+  const orangePieces = cutFruitpieces(oranges);
+
+  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
