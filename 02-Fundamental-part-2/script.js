@@ -68,17 +68,25 @@ console.log(YearsUntilRetirement(1990, "bobs"));
 
 */
 
-////////////////////////////////Functions calling other function (recursion)////////////////////////
-function cutFruitpieces(fruit) {
-  return fruit * 4;
-}
+// ////////////////////////////////Functions calling other function (recursion)////////////////////////
+// function cutFruitpieces(fruit) {
+//   return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitpieces(apples);
-  const orangePieces = cutFruitpieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitpieces(apples);
+//   const orangePieces = cutFruitpieces(oranges);
 
-  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
+//   return juice;
+// }
 
-console.log(fruitProcessor(2, 3));
+// console.log(fruitProcessor(2, 3));
+
+///////////////////////////////Arrays ///////////////////////
+
+const frineds = ["Michael", "Steven", "peter"];
+console.log(frineds);
+
+const years = new Array(1991, 1973, 1239, 3020);
+console.log(years);
