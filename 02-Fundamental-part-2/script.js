@@ -212,6 +212,6 @@ console.log(Gaurav.getSummary());
 
 // console.log(`lifting weights repetition 1`);
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`lifting weights repetition  ${rep}  😤 `);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`lifting weights repetition  ${rep}  😤 `);
+// }
