@@ -9,7 +9,9 @@ document.querySelector(".guess").value = 23;
 console.log(document.querySelector(".guess").value);
 */
 
-//////////////////Handling click event ///////////////
+////////////////////////////////////////////// Secret Number ///////////////////////////////////////////////////////////////////
+const number = Math.random(); // here Math is object and random is one of the method in Math object
+////////////////////////////////////////////Handling click event ///////////////////////////////////////////////////////////////////
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
