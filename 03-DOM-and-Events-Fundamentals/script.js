@@ -13,7 +13,11 @@ console.log(document.querySelector(".guess").value);
 const secretNumber = Math.trunc(Math.random() * 20 + 1);
 
 document.querySelector(".number").textContent = secretNumber;
-// here Math is object and random is one of the method in Math object
+
+/* here Math is object and random is one of the method in Math object*/
+//////////////////////////////////////////// Score data  ///////////////////////////////////////////////////////////////////
+
+let score = 20;
 ////////////////////////////////////////////Handling click event ///////////////////////////////////////////////////////////////////
 
 document.querySelector(".check").addEventListener("click", function () {
@@ -26,8 +30,22 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = " Correct Number 🤩";
   } else if (guess > secretNumber) {
-    document.querySelector(".message").textContent = "Too high! 📈  ";
-  } else {
-    document.querySelector(".message").textContent = "  Too low! 📉";
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too high! 📈  ";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent = " You lost the game !🤡";
+      document.querySelector(".score").textContent = 0;
+    }
+  } else if (guess < secretNumber) {
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too low! 📈  ";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent = " You lost the game !🤡";
+      document.querySelector(".score").textContent = 0;
+    }
   }
 });
