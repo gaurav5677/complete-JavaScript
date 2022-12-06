@@ -11,4 +11,12 @@ console.log(document.querySelector(".guess").value);
 
 //////////////////Handling click event ///////////////
 
-document.querySelector(".check").addEventListener("");
+document.querySelector(".check").addEventListener("click", function () {
+  const guess = Number(document.querySelector(".guess").value);
+  console.log(guess, typeof guess);
+
+  if (!guess) {
+    // this will only execute if the guess is false , but the NOT operator will convert it to true.
+    document.querySelector(".message").textContent = "🙅‍♂️ No number ! ";
+  }
+});
