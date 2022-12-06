@@ -10,7 +10,9 @@ console.log(document.querySelector(".guess").value);
 */
 
 ////////////////////////////////////////////// Secret Number ///////////////////////////////////////////////////////////////////
-const number = Math.random(); // here Math is object and random is one of the method in Math object
+const secretNumber = Math.trunc(Math.random() * 20 + 1);
+document.querySelector(".number").textContent = secretNumber;
+// here Math is object and random is one of the method in Math object
 ////////////////////////////////////////////Handling click event ///////////////////////////////////////////////////////////////////
 
 document.querySelector(".check").addEventListener("click", function () {
@@ -20,5 +22,11 @@ document.querySelector(".check").addEventListener("click", function () {
   if (!guess) {
     // this will only execute if the guess is false , but the NOT operator will convert it to true.
     document.querySelector(".message").textContent = "🙅‍♂️ No number ! ";
+  } else if (guess === secretNumber) {
+    document.querySelector(".message").textContent = " Correct Number 🤩";
+  } else if (guess > secretNumber) {
+    document.querySelector(".message").textContent = "Too high! 📈  ";
+  } else {
+    document.querySelector(".message").textContent = "  Too low! 📉";
   }
 });
