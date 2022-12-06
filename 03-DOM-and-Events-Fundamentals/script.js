@@ -12,12 +12,11 @@ console.log(document.querySelector(".guess").value);
 ////////////////////////////////////////////// Secret Number ///////////////////////////////////////////////////////////////////
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 
-document.querySelector(".number").textContent = secretNumber;
-
 /* here Math is object and random is one of the method in Math object*/
 //////////////////////////////////////////// Score data  ///////////////////////////////////////////////////////////////////
 
 let score = 20;
+let highscore = 0;
 ////////////////////////////////////////////    Handling check event ////////////////////////////////////////////////////
 
 document.querySelector(".check").addEventListener("click", function () {
@@ -32,9 +31,15 @@ document.querySelector(".check").addEventListener("click", function () {
 
     /////////////////////////////////////////////  This is when player wins    //////////////////////////////////////////////////
   } else if (guess === secretNumber) {
+    document.querySelector(".number").textContent = secretNumber;
+
     document.querySelector(".message").textContent = " Correct Number 🤩";
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector(".number").style.width = "30rem"; // this must be in string we can not specify it as  number or integer value .
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector(".highscore").textContent = highscore;
+    }
   } else if (guess > secretNumber) {
     /////////////////////////////////////////////   This is when the guess is too High !////////////////////////////////////////
 
