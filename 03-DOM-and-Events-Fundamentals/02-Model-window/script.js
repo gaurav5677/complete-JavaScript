@@ -21,4 +21,15 @@ for (let i = 0; i < btnOpenModal.length; i++) {
   btnCloseModal.addEventListener("click", closeModal);
 
   overlay.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", function (e) {
+    // console.log("A key was pressed ");
+    console.log(e.key);
+
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      // if (!modal.classList.contains("hidden"))
+      // if the modal does not contain the hidden class then close the modal
+      closeModal();
+    }
+  });
 }
