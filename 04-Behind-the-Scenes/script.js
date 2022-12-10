@@ -62,3 +62,25 @@ function deleteShopping() {
 */
 
 ///////////////////////Practice This Keyword ///////////////////////
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this); //   here it has its own this keyword
+};
+calcAge(1991);
+
+const calcAgeArrow = (birthYear) => {
+  console.log(2037 - birthYear);
+  console.log(this); // Array function do not have their own  this function , that why it is pointing to wards to window
+};
+calcAgeArrow(1980);
+
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this); // in this example this keyword will point jonas because object is calleing calcAge function
+    console.log(2037 - this.year);
+  },
+};
+jonas.calcAge();
