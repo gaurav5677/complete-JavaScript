@@ -3,8 +3,15 @@ function calcAge(birthYear) {
   console.log(firstName);
 
   function printAge() {
-    const output = `you are ${age}, born in ${birthYear}`;
+    const output = `${firstName},you are ${age}, born in ${birthYear}`;
     console.log(output);
+
+    if (birthYear >= 2005 && birthYear <= 2018) {
+      var millenial = true;
+      const str = `oh, You're a Millenial, ${firstName}`;
+      console.log(str);
+    }
+    console.log(millenial);
   }
 
   printAge();
@@ -13,3 +20,4 @@ function calcAge(birthYear) {
 
 const firstName = "gaurav";
 calcAge(2001);
+// var varrialbe do not care about blocks at all
