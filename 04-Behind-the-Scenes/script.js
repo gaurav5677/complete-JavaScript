@@ -123,3 +123,21 @@ jonas.calcAge();
 //   },
 // };
 // jonas.great();
+
+/////////////////////////Primitives vs Objects ////////////////////
+
+let age = 30;
+let oldAge = age;
+age = 31;
+
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: " jonas ",
+  age: 30,
+};
+const friend = me;
+friend.age = 27;
+console.log("frineds", friend);
+console.log("me", me);
