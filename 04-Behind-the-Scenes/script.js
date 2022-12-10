@@ -25,6 +25,7 @@ calcAge(2001);
 // var varrialbe do not care about blocks at all
 */
 
+/*
 /////////////////////////////  Hosting And TDZ  //////////////////////
 
 // console.log(me);
@@ -56,3 +57,8 @@ var numProducts = 10;
 function deleteShopping() {
   console.log("All product deleted!");
 }
+
+
+*/
+
+///////////////////////Practice This Keyword ///////////////////////
