@@ -109,17 +109,17 @@ jonas.calcAge();
 // };
 // jonas.great();
 
-const jonas = {
-  firstName: "jonas",
-  year: 2001,
-  calcAge: function () {
-    console.log(this);
-    console.log(2037 - this.year);
-  },
+// const jonas = {
+//   firstName: "jonas",
+//   year: 2001,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
 
-  great: function () {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
-};
-jonas.great();
+//   great: function () {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+// jonas.great();
