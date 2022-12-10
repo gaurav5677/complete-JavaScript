@@ -60,7 +60,7 @@ function deleteShopping() {
 
 
 */
-
+/*
 ///////////////////////Practice This Keyword ///////////////////////
 console.log(this);
 
@@ -84,3 +84,42 @@ const jonas = {
   },
 };
 jonas.calcAge();
+
+
+*/
+
+////////////////////// Regular function vs Arrow function ///////////////////////
+
+/// always avoid using Arrow function  , combination with THIS keyword , cause it will always undefind  ,  calling window in console ,
+/// You can use var to solve the problem ,,
+
+// var firstName = "Matilda";
+// const jonas = {
+//   firstName: "jonas",
+//   year: 2001,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+
+//   great: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+// jonas.great();
+
+const jonas = {
+  firstName: "jonas",
+  year: 2001,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+
+  great: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+jonas.great();
