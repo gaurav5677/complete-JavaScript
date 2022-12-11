@@ -138,5 +138,32 @@ const restaurant = {
   location: "Via Angelo Tavanti 23, Firenze, Italy",
   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+
   mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `here is your  declicious pasta with ${ing1} , ${ing2} , ${ing3}`
+    );
+  },
 };
+
+const newMenu = [...restaurant.starterMenu, "Gnocci"];
+console.log(newMenu);
+
+/// copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//// join 2 arrays
+
+const twoArray = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(twoArray);
+
+const ingredients = [
+  prompt("Let's make pasta !  Ingredient 1?"),
+  prompt("Let's make pasta !  Ingredient 1?"),
+  prompt("Let's make pasta !  Ingredient 1?"),
+];
+console.log(ingredients);
+
+restaurant.orderPasta(...ingredients);
