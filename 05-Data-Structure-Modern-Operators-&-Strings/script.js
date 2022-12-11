@@ -131,6 +131,7 @@ const {
 console.log(o, c);
 
 */
+/* 
 ///////////////////////       Spread Operator       /////////////////
 
 const restaurant = {
@@ -172,3 +173,14 @@ console.log(twoArray);
 
 const newRestaurant = { foundedIn: 2002, ...restaurant, founder: " Martia " };
 console.log(newRestaurant);
+*/
+
+//////////////////////// Short Circuiting (&& and __) //////////////////////
+console.log(3 || "Jonas");
+console.log("" || "jonas");
+console.log(true || 0);
+console.log(undefined || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
