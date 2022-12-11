@@ -159,11 +159,16 @@ const mainMenuCopy = [...restaurant.mainMenu];
 const twoArray = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(twoArray);
 
-const ingredients = [
-  prompt("Let's make pasta !  Ingredient 1?"),
-  prompt("Let's make pasta !  Ingredient 1?"),
-  prompt("Let's make pasta !  Ingredient 1?"),
-];
-console.log(ingredients);
+// const ingredients = [
+//   prompt("Let's make pasta !  Ingredient 1?"),
+//   prompt("Let's make pasta !  Ingredient 1?"),
+//   prompt("Let's make pasta !  Ingredient 1?"),
+// ];
+// console.log(ingredients);
 
-restaurant.orderPasta(...ingredients);
+// restaurant.orderPasta(...ingredients);
+
+/////////Objects
+
+const newRestaurant = { foundedIn: 2002, ...restaurant, founder: " Martia " };
+console.log(newRestaurant);
