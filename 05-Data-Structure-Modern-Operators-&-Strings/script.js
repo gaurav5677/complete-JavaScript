@@ -55,7 +55,7 @@ console.log(p, q, r);
 
 
 */
-
+/*
 ////////////////////////////////// Destructruing Objects ////////////////////////////
 const restaurant = {
   name: "Classico Italiano",
@@ -129,3 +129,14 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
+
+*/
+///////////////////////       Spread Operator       /////////////////
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+};
