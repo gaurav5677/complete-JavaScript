@@ -1,4 +1,7 @@
 // const { start } = require("live-server");
+/*
+
+////////////////////////////////// Destructruing Arrays ////////////////////////////
 
 const restaurant = {
   name: "Classico Italiano",
@@ -48,3 +51,7 @@ console.log(i, j, k);
 /// default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+
+
+
+*/
