@@ -205,7 +205,7 @@ console.log(newRestaurant);
 // console.log(orderSet);
 // orderSet.delete("Pasta");
 // console.log(orderSet);
-
+/*
 const gameEvent = new Map([
   [17, "Goal"],
   [36, "Substitution"],
@@ -242,3 +242,4 @@ for (const [min, event] of gameEvent) {
   const half = min <= 45 ? "first" : "second";
   console.log(`[${half} Half] ${min} : ${event}`);
 }
+*/
