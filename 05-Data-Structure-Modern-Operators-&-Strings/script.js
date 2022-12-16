@@ -205,3 +205,17 @@ console.log(newRestaurant);
 // console.log(orderSet);
 // orderSet.delete("Pasta");
 // console.log(orderSet);
+
+const gameEvent = new Map([
+  [17, "Goal"],
+  [36, "Substitution"],
+  [47, "Goal"],
+  [61, "Substitution"],
+  [64, "Yellow card "],
+  [69, "Red card "],
+  [70, "Substitution"],
+  [72, "Substitution"],
+  [76, "Goal"],
+  [88, "Goal"],
+  [92, "Yellow card"],
+]);
