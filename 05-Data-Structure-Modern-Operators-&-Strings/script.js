@@ -243,3 +243,28 @@ for (const [min, event] of gameEvent) {
   console.log(`[${half} Half] ${min} : ${event}`);
 }
 */
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const airline = "Tap Air India";
+const plane = "A380";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+
+console.log("b838"[2]);
+console.log(airline.length);
+console.log("b383".length);
+
+console.log(airline.indexOf("A"));
+console.log(airline.lastIndexOf("r"));
+
+console.log(airline.indexOf("India"));
+
+console.log(airline.slice(4)); // Basically its the postion at which the extraction will start
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -2));
