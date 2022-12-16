@@ -184,3 +184,24 @@ console.log(newRestaurant);
 // restaurant.numGuests = 23;
 // const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 // console.log(guests1);
+
+// ///////////////////////////////        Sets //////////////////
+
+// const orderSet = new Set([
+//   "Pasta",
+//   "Pizza",
+//   "Pizza",
+//   "Risotto ",
+//   "Pasta",
+//   "Pizza",
+// ]);
+
+// console.log(orderSet);
+
+// console.log(new Set("Jonas"));
+// console.log(orderSet.size);
+// orderSet.add("garlic Bread");
+// orderSet.add("garlic Bread");
+// console.log(orderSet);
+// orderSet.delete("Pasta");
+// console.log(orderSet);
