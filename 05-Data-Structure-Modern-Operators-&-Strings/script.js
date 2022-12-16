@@ -268,3 +268,17 @@ console.log(airline.slice(0, airline.indexOf(" ")));
 console.log(airline.slice(airline.lastIndexOf(" ") + 1));
 console.log(airline.slice(-2));
 console.log(airline.slice(1, -2));
+
+const checkMiddleSeat = function (seat) {
+  const S = seat.slice(-1);
+  if (S === "B" || S === "C") {
+    console.log(`You got the middle seat 😙`);
+  } else {
+    console.log("you got lucky 😎");
+  }
+};
+/// B and E are the middle seats
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
