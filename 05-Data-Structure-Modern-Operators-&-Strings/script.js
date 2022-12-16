@@ -219,3 +219,26 @@ const gameEvent = new Map([
   [88, "Goal"],
   [92, "Yellow card"],
 ]);
+
+//1.
+// console.log(gameEvent.values());
+const event = new Set(gameEvent.values());
+console.log(event);
+
+// 2.
+gameEvent.delete(64);
+
+// 3.
+
+const time = [...gameEvent.keys()].pop();
+console.log(time);
+
+console.log(
+  `An event happend, on Average , every ${time / gameEvent.size} minutes`
+);
+
+// 4.
+for (const [min, event] of gameEvent) {
+  const half = min <= 45 ? "first" : "second";
+  console.log(`[${half} Half] ${min} : ${event}`);
+}
