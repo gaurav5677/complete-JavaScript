@@ -358,3 +358,56 @@ checkBaggage("Got some snacks and a gun for protection");
 */
 
 ////////////////////////////////////////working with String Part 3 /////////////////////////
+
+console.log("a+very+nice+string".split("+"));
+console.log("Gaurav Avinash Patil".split(" "));
+
+const [firstName, lastName] = "Gaurav Patil".split(" ");
+
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
+
+// const capitalization = function (name) {
+//   const names = name.split(" ");
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//     // namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+
+//     namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//   }
+//   console.log(namesUpper.join(" "));
+// };
+// capitalization("jessica an smit davis ");
+
+// capitalization("Gaurav patil");
+/////////////// Padding ///////////////////////
+
+const message = "Go to gate 23!";
+console.log(message.padStart(25, "+"));
+console.log("jonas".padStart(23, "$."));
+
+const maskCrediCard = function (number) {
+  const str = number + " ";
+  const last = str.slice(-4);
+  return last.padStart(str.length, "*");
+};
+
+console.log(maskCrediCard(34242342));
+console.log(maskCrediCard(34242342));
+// console.log(maskCrediCard(342423423423590293));
+// maskCrediCard("23423523434829330");
+
+////////////////////////////////// Repeat ////////////////////////////
+
+const message2 = "bad weather......... All Departues Delayes.....";
+console.log(message2.repeat(50));
+
+const plancesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${"✈".repeat(n)}`);
+};
+
+plancesInLine(5);
+plancesInLine(3);
+plancesInLine(15);
