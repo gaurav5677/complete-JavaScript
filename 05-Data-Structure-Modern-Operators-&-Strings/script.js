@@ -245,6 +245,7 @@ for (const [min, event] of gameEvent) {
 */
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
 const airline = "Tap Air India";
 const plane = "A380";
 
@@ -282,3 +283,46 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat("11B");
 checkMiddleSeat("23C");
 checkMiddleSeat("3E");
+
+*/
+/////////////////////////////////Working with String part - 2 ////////////////
+
+const airline = "Tap Air India";
+
+console.log(airline.toLowerCase());
+
+console.log(airline.toUpperCase());
+
+const passenger = "GaUrav"; // Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+
+console.log(passengerCorrect);
+
+console.log(passengerLower);
+console.log(passengerCorrect);
+
+// Comparing Email...
+
+const email = "hello@gaurav.io";
+const loginEmail = "   Hello@gaurav.Io \n";
+
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+//replacing
+
+const priceGB = "288.97£ ";
+const priceUS = priceGB.replace("£", "$").replace(",", ".");
+console.log(priceUS);
+
+const announcement =
+  " All passenger come to barding door 23. Boarding door 23!";
+
+console.log(announcement.replaceAll("door", "gate"));
