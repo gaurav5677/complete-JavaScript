@@ -285,6 +285,8 @@ checkMiddleSeat("23C");
 checkMiddleSeat("3E");
 
 */
+
+/*
 /////////////////////////////////Working with String part - 2 ////////////////
 
 const airline = "Tap Air India";
@@ -353,3 +355,6 @@ const checkBaggage = function (items) {
 checkBaggage("I have a laptop , some food and a pocket Knife  ");
 checkBaggage("Socks and camera");
 checkBaggage("Got some snacks and a gun for protection");
+*/
+
+////////////////////////////////////////working with String Part 3 /////////////////////////
