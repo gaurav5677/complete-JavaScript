@@ -326,3 +326,30 @@ const announcement =
   " All passenger come to barding door 23. Boarding door 23!";
 
 console.log(announcement.replaceAll("door", "gate"));
+
+//////////////////////////////////// Booleans ///////////////////////////////////////
+const plane = "Airbus A32neo";
+console.log(plane.includes("A32"));
+console.log(plane.includes("A320"));
+console.log(plane.includes("Ai"));
+console.log(plane.startsWith("Ai"));
+
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+  console.log("Part of the NEW Aribus family");
+}
+
+//////////  practice Exercise
+
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  // const baggage = items;
+  if (baggage.includes("knife") || baggage.includes("gun")) {
+    console.log("You are NOT allowed on board");
+  } else {
+    console.log("Welcome aboard");
+  }
+};
+
+checkBaggage("I have a laptop , some food and a pocket Knife  ");
+checkBaggage("Socks and camera");
+checkBaggage("Got some snacks and a gun for protection");
