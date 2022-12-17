@@ -41,6 +41,13 @@ checkIn(flight, gaurav);
 console.log(flight);
 console.log(gaurav);
 
-// is the same as doning
-const flightNum = flight;
-const passenger = gaurav;
+// // is the same as doning
+// const flightNum = flight;
+// const passenger = gaurav;
+
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 1000000);
+};
+
+newPassport(gaurav);
+checkIn(flight, gaurav);
