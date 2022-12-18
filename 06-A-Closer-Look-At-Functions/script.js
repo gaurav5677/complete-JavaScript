@@ -105,3 +105,5 @@ greet("Hello")("Gaurav");
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 greetArr("hi")("gaurav");
+
+////////////////////////////////////////////////////////// The call and apply Method  //////////////////////////////////////////////////////////
