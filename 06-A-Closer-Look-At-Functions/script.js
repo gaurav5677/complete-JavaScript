@@ -88,7 +88,7 @@ document.body.addEventListener("click", high5);
 */
 
 //////////////////////////////////////////////////////////Function Returning Function //////////////////////////////////////////////////////////
-
+/*
 const greet = function (greeting) {
   return function (name) {
     console.log(`${greeting} ${name}`);
@@ -105,5 +105,5 @@ greet("Hello")("Gaurav");
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 greetArr("hi")("gaurav");
-
+*/
 ////////////////////////////////////////////////////////// The call and apply Method  //////////////////////////////////////////////////////////
