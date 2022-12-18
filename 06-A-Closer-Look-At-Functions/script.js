@@ -18,6 +18,8 @@ creatBooking("LH124", 2, 800);
 creatBooking("LH124", 34);
 creatBooking("LH124", 4);
 */
+
+/*
 ///////////////// How Passing Arguments Works Value VS Reference/////////////////
 
 const flight = "LH234";
@@ -51,3 +53,6 @@ const newPassport = function (person) {
 
 newPassport(gaurav);
 checkIn(flight, gaurav);
+*/
+
+///////////////////////////////////Recursive functions in javaScript //////////////////////
