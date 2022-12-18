@@ -154,3 +154,35 @@ book.apply(swiss, flightData);
 book.call(swiss, ...flightData);
 
 ////////////////////////////////////////////////////////// The Last Method ,,, Bind Method  //////////////////////////////////////////////////////////
+
+const bookEW = book.bind(eurowings);
+bookEW(23, "Steven Willams");
+const bookLH = book.bind(lufthansa);
+const bookLX = book.bind(swiss);
+bookLH(234, "adam hency");
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23("Jonas patil");
+bookEW23("Martha Cooper");
+
+////////////////with Event Listneres//////////////////////
+// new property only for lufthansa object
+lufthansa.planes = 300; // meaning that this company has 300 planes
+lufthansa.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa)); // here lufthansa.buyPlane is the handler function
+
+///////////////////// Partial Application of Bind Method ////////////////////////
+
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+
+//////////////////////////////////////////////////////////  Closures  //////////////////////////////////////////////////////////
