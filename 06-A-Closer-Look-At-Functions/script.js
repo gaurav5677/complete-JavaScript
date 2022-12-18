@@ -186,3 +186,31 @@ console.log(addTax(0.1, 200));
 const addVAT = addTax.bind(null, 0.23);
 
 //////////////////////////////////////////////////////////  Closures  //////////////////////////////////////////////////////////
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
+
+console.dir(booker);
+
+/* 
+Closure Defination 1 :  A closure gives a function access to all the variables of
+ its parent function, even after the parent function has returned. The function keeps a 
+reference to its outer scope. Which preserves the scope chain throughout time
+
+
+Closure Defination 2 : A closure is like a backpack that a function carries around wherever it goes. This backpack 
+has all the variable that were present i the environment where the function was created . 
+
+*/
