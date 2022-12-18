@@ -54,8 +54,8 @@ const newPassport = function (person) {
 newPassport(gaurav);
 checkIn(flight, gaurav);
 */
-
-///////////////////////////////////Recursive functions in javaScript //////////////////////
+/*
+///////////////////////////////////Higher-order functions in javaScript //////////////////////
 
 const oneWord = function (str) {
   return str.replace(/ /g, "").toLowerCase();
@@ -84,3 +84,7 @@ const high5 = function () {
 document.body.addEventListener("click", high5);
 
 ["jonas", "jonas", "jonas", "jonas", "adsf", "wtf"].forEach(high5);
+
+*/
+
+//////////////////////////////////////////////////////////Function Returning Function //////////////////////////////////////////////////////////
