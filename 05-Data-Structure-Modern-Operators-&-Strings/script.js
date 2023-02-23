@@ -192,6 +192,13 @@ console.log(newRestaurant);
 //   "Pizza",
 // ]);
 
+
+
+
+// sets can hold mix data types 
+
+
+
 // console.log(orderSet);
 
 // console.log(new Set("Jonas"));
