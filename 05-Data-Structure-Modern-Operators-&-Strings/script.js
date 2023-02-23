@@ -203,6 +203,8 @@ console.log(newRestaurant);
 
 // console.log(new Set("Jonas"));
 // console.log(orderSet.size);
+// console.log(orderSet.has('Pizza'));
+// console.log(orderSet.has('Bread'));
 // orderSet.add("garlic Bread");
 // orderSet.add("garlic Bread");
 // console.log(orderSet);
