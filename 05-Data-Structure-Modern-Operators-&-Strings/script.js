@@ -1,5 +1,4 @@
 // const { start } = require("live-server");
-/*
 
 ////////////////////////////////// Destructruing Arrays ////////////////////////////
 
@@ -52,9 +51,6 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 
-
-
-*/
 /*
 ////////////////////////////////// Destructruing Objects ////////////////////////////
 const restaurant = {
@@ -287,7 +283,14 @@ checkMiddleSeat("3E");
 */
 
 /*
+
+
+
+
 /////////////////////////////////Working with String part - 2 ////////////////
+
+
+
 
 const airline = "Tap Air India";
 
@@ -330,6 +333,8 @@ const announcement =
 console.log(announcement.replaceAll("door", "gate"));
 
 //////////////////////////////////// Booleans ///////////////////////////////////////
+
+
 const plane = "Airbus A32neo";
 console.log(plane.includes("A32"));
 console.log(plane.includes("A320"));
@@ -340,7 +345,13 @@ if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
   console.log("Part of the NEW Aribus family");
 }
 
+
+
+
+
 //////////  practice Exercise
+
+
 
 const checkBaggage = function (items) {
   const baggage = items.toLowerCase();
@@ -359,8 +370,12 @@ checkBaggage("Got some snacks and a gun for protection");
 
 ////////////////////////////////////////working with String Part 3 /////////////////////////
 
+
+
 console.log("a+very+nice+string".split("+"));
 console.log("Gaurav Avinash Patil".split(" "));
+
+
 
 const [firstName, lastName] = "Gaurav Patil".split(" ");
 
