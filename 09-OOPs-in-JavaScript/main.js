@@ -171,3 +171,18 @@ gaurav.calcAge();
 
 /*                            Object.create                          */
 
+const PersonProto = {
+   calcAge() {
+      console.log(2037 - this.birthYear);
+   },
+
+   init(name, birthYear) {
+      this.name = name;
+      this.birthYear = birthYear;
+   },
+};
+// Object.create   creates a new object  and the prototype of that object  
+const gaurav = Object.create(PersonProto);
+// console.log(gaurav)
+gaurav.init('gaurav', 2001);
+gaurav.calcAge();
