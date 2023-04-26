@@ -64,3 +64,46 @@ console.log(gaurav.species, abhishek.species);
 
 console.log(gaurav.hasOwnProperty('firstName'));
 console.log(gaurav.hasOwnProperty('species'));
+
+console.log(gaurav.__proto__);
+console.log(gaurav.__proto__.__proto__.__proto__);
+
+console.log(Person.prototype.constructor)
+
+const arr = [3, 4, 5, 6, 7, 8];   // new Array ===[]
+
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype);
+
+
+Array.prototype.unique = function () {
+   return [...new Set(this)];
+
+}
+console.log(arr.unique());
+
+
+const Car = function (name, speed) {
+   this.name = name;
+   this.speed = speed;
+}
+
+const Fortuner = new Car('Fortuner', 180);
+
+const Endevaour = new Car('Endevaour', 210);
+
+
+Car.prototype.accelerate = function () {
+   this.speed += 10;
+   console.log(`${this.name} is going at ${this.speed}`);
+
+}
+
+Car.prototype.brake = function () {
+
+   this.speed -= 5;
+   console.log(`${this.name} is going at ${this.speed}`);
+}
+
+Fortuner.accelerate();
+Fortuner.brake();
