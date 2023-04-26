@@ -111,11 +111,18 @@ Fortuner.accelerate();
 Fortuner.brake();
 */
 
+
+
+/*                               ES6 Classes                          */
+
+
+/*
 // class Expression
 
 // const PersonCl = class {
 
 // }
+
 
 
 // Class Declaration 
@@ -145,3 +152,22 @@ gaurav.calcAge();
 // 1 . classes are NOT hoisted  ( which means we can use them  before they are declared  in the code )
 // 2 . Just like function,  classes  are First-class citizens
 // 3 . The body of class are executed in Strict mode 
+
+
+*/
+
+
+
+/*                           Getter and Setter                       */
+
+
+
+
+
+
+
+
+
+
+/*                            Object.create                          */
+
