@@ -1,4 +1,6 @@
 'use strict';
+
+/*
 // The purpose of "use strict" is to indicate that the code should be executed in "strict mode"
 const Person = function (firstName, birthYear) {
    //  console.log(this)
@@ -107,3 +109,39 @@ Car.prototype.brake = function () {
 
 Fortuner.accelerate();
 Fortuner.brake();
+*/
+
+// class Expression
+
+// const PersonCl = class {
+
+// }
+
+
+// Class Declaration 
+class PersonCl {
+
+   // inside the class the first thing we need to do is
+   // declare the Construction class 
+   constructor(firstName, birthYear) {
+      this.firstName = firstName;
+      this.birthYear = birthYear;
+   }  // this is a Method 
+
+
+   calcAge() {
+      console.log(2037 - this.birthYear);
+   }
+
+}
+
+const gaurav = new PersonCl('gaurav', 2001);
+
+console.log(gaurav);
+gaurav.calcAge();
+
+
+
+// 1 . classes are NOT hoisted  ( which means we can use them  before they are declared  in the code )
+// 2 . Just like function,  classes  are First-class citizens
+// 3 . The body of class are executed in Strict mode 
