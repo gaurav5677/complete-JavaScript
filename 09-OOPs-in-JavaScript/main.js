@@ -193,7 +193,7 @@ gaurav.calcAge();
 
 
 /*                            Inheritance Between "Classes" : Constructor Function                             */
-
+/*
 const person = function (firstName, birthYear) {
    this.firstName = firstName;
    this.birthYear = birthYear;
@@ -218,11 +218,11 @@ const gaurav = new student('gaurav ', 2001, 'Instru');
 
 gaurav.intro();
 gaurav.calcAge();
+ */
 
 
 
-
-
+/*                             Inheritance Between _Classes__ Constructor Functions                             */
 
 
 
@@ -283,3 +283,70 @@ gaurav.Intro();
 gaurav.calcage();
 
 */
+
+
+
+/*                             Inheritance Between _Classes__ ES6 Classes                             */
+
+class PersonCl {
+   constructor(fullName, birthYear) {
+      this.fullName = fullName;
+      this.birthYear = birthYear;
+
+   }
+
+   clacAge() {
+      console.log(2023 - this.birthYear);
+   }
+
+   greet() {
+      console.log(`Hey ${this.fullName}`);
+   }
+
+   get age() {
+      return 2023 - this.birthYear;
+   }
+
+   set fullName(name) {
+      if (name.includes(' ')) this._fullName = name;
+      else alert(`${name} is not a full name!`);
+   }
+
+   get fullName() {
+      return this._fullName;
+   }
+
+   static hey() {
+      console.log('Hey there ');
+   }
+}
+
+
+class StudentCl extends PersonCl {
+   constructor(fullName, birthYear, course) {
+      //    // super is basically the constructor function of the parent class , so the idea is still
+      //    // similar to what we did   in constructor function , but here it happed automatically , we 
+      //    // don't need to specidfy the name of the parent class again  
+
+
+
+      //    // always needs to happen first 
+      super(fullName, birthYear);
+      this.course = course;
+
+
+      // }
+
+   }
+   introduce() {
+      console.log(`My name is ${this.fullName} and I study ${this.course}`);
+   }
+
+   clacAge() {
+      console.log(`I'm ${2037 - this.birthYear}  years old, but as a strudent I feel more like ${2037 - this.birthYear + 10}`);
+   }
+}
+const gaurav = new StudentCl('gaurav patil', 2001, 'computer science');
+
+gaurav.introduce();
+gaurav.clacAge();
