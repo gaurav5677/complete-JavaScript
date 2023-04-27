@@ -287,6 +287,7 @@ gaurav.calcage();
 
 
 /*                             Inheritance Between _Classes__ ES6 Classes                             */
+/*
 
 class PersonCl {
    constructor(fullName, birthYear) {
@@ -349,4 +350,46 @@ class StudentCl extends PersonCl {
 const gaurav = new StudentCl('gaurav patil', 2001, 'computer science');
 
 gaurav.introduce();
-gaurav.clacAge();
+gaurav.clacAge(); 
+
+*/
+
+/*                             Inheritance Between _Classes__ Object.create                              */
+
+const PersonProto = {
+   calcAge() {
+      console.log(2037 - this.birthYear);
+   },
+
+   init(firstName, birthYear) {
+      this.firstName = firstName;
+      this.birthYear = birthYear;
+   },
+
+
+};
+
+const gaurav = Object.create(PersonProto);
+
+const StudentProto = Object.create(PersonProto);
+// PersonProto object is in turn  the prototype of studentproto 
+StudentProto.init = function (firstName, birthYear, course) {
+   PersonProto.init.call(this, firstName, birthYear);
+   this.course = course;
+}
+
+
+StudentProto.Intro = function () {
+   console.log(`MY name is ${this.firstName}  and I study ${this.course} `);
+}
+
+const jay = Object.create(StudentProto);
+
+// StudentProto is now prototype of jay
+// PersonProto is parent prototype of jay  
+
+
+jay.init('jay', 2001, 'Computer Science ');
+jay.Intro();
+jay.calcAge();
+
