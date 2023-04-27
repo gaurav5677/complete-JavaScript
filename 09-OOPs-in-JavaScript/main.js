@@ -170,7 +170,7 @@ gaurav.calcAge();
 
 
 /*                            Object.create                          */
-
+/*
 const PersonProto = {
    calcAge() {
       console.log(2037 - this.birthYear);
@@ -186,3 +186,100 @@ const gaurav = Object.create(PersonProto);
 // console.log(gaurav)
 gaurav.init('gaurav', 2001);
 gaurav.calcAge();
+
+*/
+
+
+
+
+/*                            Inheritance Between "Classes" : Constructor Function                             */
+
+const person = function (firstName, birthYear) {
+   this.firstName = firstName;
+   this.birthYear = birthYear;
+}
+
+person.prototype.calcAge = function () {
+   console.log(2037 - this.birthYear);
+}
+
+const student = function (firstName, birthYear, course) {
+   person.call(this, firstName, birthYear);
+   this.course = course;
+}
+
+//linking prototpe 
+student.prototype = Object.create(person.prototype);
+student.prototype.intro = function () {
+   console.log(`My name is ${this.firstName} and I study ${this.course}`);
+}
+
+const gaurav = new student('gaurav ', 2001, 'Instru');
+
+gaurav.intro();
+gaurav.calcAge();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const Person = function (firstname, birthYear) {
+   this.firstname = firstname;
+   this.birthYear = birthYear;
+
+}
+
+Person.prototype.calcage = function () {
+   console.log(2050 - this.birthyear);
+}
+
+// constructor function 
+const Student = function (firstName, birthYear, course) {
+
+   // Person(firstName, birthYear) // this will never work bcuz we are calling Person construction function   as a regular function  call 
+   // so we are not using the new operator to call the person function  constructor 
+   // therefor in regular function call the this keyword is set to undefined  .. cuzes error 
+   // so now we need to call the function and at the same time set the this keyword 
+   // use call method
+
+   Person.call(this, firstName, birthYear);
+
+   // this.firstName = firstName;
+
+   // this.birthYear = birthYear;
+
+   this.course = course;  // additional property 
+
+}
+
+// LInking prototype 
+// Student.prototype = Object.create(Person.prototype);
+Student.prototype = Object.create(Person.prototype)
+
+// Introducntion 
+
+Student.prototype.Intro = function () {
+   console.log(`My Name is ${this.firstName} and I study ${this.course}`);
+}
+
+
+//creating new student 
+
+const gaurav = new Student('gaurav', 2001, 'Instrumentation Engineering');
+// console.log(gaurav);
+gaurav.Intro();
+gaurav.calcage();
+
+*/
